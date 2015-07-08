@@ -1,0 +1,5 @@
+.rvmrc
+.ruby-version
+.ruby-gemset
+*.swp
+*.swo
