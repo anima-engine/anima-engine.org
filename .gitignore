@@ -3,3 +3,5 @@
 .ruby-gemset
 *.swp
 *.swo
+
+bower_components/
