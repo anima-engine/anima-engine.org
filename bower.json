@@ -1,0 +1,19 @@
+{
+  "name": "anima-engine.org",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Anima-Engine/anima-engine.org",
+  "authors": [
+    "Krody Robert <krody.robi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.7"
+  }
+}
