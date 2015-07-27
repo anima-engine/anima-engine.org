@@ -3,3 +3,5 @@
 .ruby-gemset
 *.swp
 *.swo
+
+public/components/
