@@ -10,10 +10,14 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "public/components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~1.0.7"
+    "polymer": "Polymer/polymer",
+    "paper-toolbar": "PolymerElements/paper-toolbar#~1.0.4",
+    "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.3",
+    "paper-header-panel": "PolymerElements/paper-header-panel#~1.0.3"
   }
 }
