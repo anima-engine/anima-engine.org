@@ -4,4 +4,4 @@
 *.swp
 *.swo
 
-bower_components/
+public/components/
