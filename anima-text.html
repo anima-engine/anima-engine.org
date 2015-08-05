@@ -1,0 +1,39 @@
+<dom-module id="anima-text">
+  <style>
+    :host {
+      margin: 40px 12%;
+    }
+    :host ::content p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      line-height: 140%;
+      color: #444;
+    }
+    :host ::content h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 72px;
+      color: #111;
+    }
+    :host ::content h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 48px;
+      color: #111;
+    }
+    :host ::content h3 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #111;
+    }
+  </style>
+
+  <template>
+    <div><content></content></div>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-text'
+      });
+  </script>
+</dom-module>

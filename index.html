@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
     <link rel="import" href="bower_components/polymer/polymer.html">
@@ -11,16 +13,13 @@
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
 
-    <link rel="import" href="anima-logo.html">
+    <link rel="import" href="anima-text.html">
     <link rel="import" href="anima-feature.html">
     <link rel="import" href="anima-feature-grid.html">
     <link rel="import" href="anima-feature-list.html">
     <link rel="import" href="anima-footer.html">
 
     <style is="custom-style">
-      object {
-        display: block;
-      }
       .content {
         max-width: 960px;
         margin: 0 auto 100px auto;
@@ -41,6 +40,14 @@
 
       <paper-material elevation="3" class="content layout vertical flex">
         <img src="assets/images/anima.svg"class="image">
+
+        <anima-text>
+          <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+          <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+          <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+
+          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a <strong>horrible vermin</strong>. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+        </anima-text>
 
         <anima-feature-grid>
           <anima-feature>
