@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+    <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+
+    <link rel="import" href="anima-feature.html">
+    <link rel="import" href="anima-feature-grid.html">
+    <link rel="import" href="anima-feature-list.html">
+    <link rel="import" href="anima-footer.html">
+
+    <style is="custom-style">
+      .content {
+        max-width: 960px;
+        margin: 0 auto 100px auto;
+        background-color: white;
+      }
+      paper-toolbar {
+        --paper-toolbar-background: #20AF8A;
+      };
+    </style>
+
+    <title>Anima Engine</title>
+  </head>
+  <body class="fullbleed layout vertical">
+    <paper-header-panel mode="waterfall" class="flex">
+      <paper-toolbar><p>Anima Engine</p></paper-toolbar>
+      <paper-material elevation="3" class="content layout vertical flex">
+        <anima-feature-grid>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+        </anima-feature-grid>
+
+        <anima-feature-list>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+          <anima-feature>
+            <img src="icons/ruby.svg" class="image" />
+            <p>Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+          </anima-feature>
+        </anima-feature-list>
+      </paper-material>
+
+      <anima-footer>
+      </anima-footer>
+    </paper-scroll-header-panel>
+  </body>
+</html>
