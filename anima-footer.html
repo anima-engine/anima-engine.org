@@ -6,13 +6,37 @@
       @apply(--layout-horizontal);
       @apply(--layout-flex);
       margin-top: -200px;
-      height: 400px;
       background-color: #055C64;
+    }
+    :host div {
+      max-width: 960px;
+      margin: 140px auto 40px auto;
+    }
+    :host div.spacing {
+      width: 120px;
+    }
+    :host ::content p, :host ::content ul {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 14px;
+      line-height: 140%;
+      color: white;
+    }
+    :host ::content div .flex-2 {
+      -ms-flex: 2 0 260px;
+      -webkit-flex: 2 0 260px;
+      flex: 2 0 260px;
+    }
+    :host ::content div .flex {
+      -ms-flex: 1 0 260px;
+      -webkit-flex: 1 0 260px;
+      flex: 1 0 260px;
     }
   </style>
 
   <template>
-    <div><content></content></div>
+    <div class="spacing"></div>
+    <div class="layout horizontal wrap"><content></content></div>
+    <div class="spacing"></div>
   </template>
 
   <script>
