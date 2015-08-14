@@ -1,0 +1,26 @@
+<dom-module id="anima-header">
+  <style>
+    :host {
+      display: block;
+      margin-bottom: -100px;
+      background-color: #20AF8A;
+    }
+    :host ::content anima-text {
+      margin-bottom: 180px;
+    }
+    :host ::content anima-text h1 {
+      text-align: center;
+      color: white;
+    }
+  </style>
+
+  <template>
+    <content></content>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-header'
+      });
+  </script>
+</dom-module>
