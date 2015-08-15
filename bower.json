@@ -17,6 +17,7 @@
     "iron-flex-layout": "PolymerElements/iron-flex-layout",
     "paper-material": "PolymerElements/paper-material",
     "paper-toolbar": "PolymerElements/paper-toolbar",
-    "paper-header-panel": "PolymerElements/paper-header-panel"
+    "paper-header-panel": "PolymerElements/paper-header-panel",
+    "paper-ripple": "PolymerElements/paper-ripple"
   }
 }
