@@ -1,0 +1,37 @@
+<link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+
+<dom-module id="anima-toolbar">
+  <style>
+    paper-toolbar {
+      --paper-toolbar-background: #20AF8A;
+    }
+    :host ::content a {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      color: #FFF;
+    }
+    img {
+      display: block;
+      padding: 9px;
+    }
+  </style>
+
+  <template>
+    <paper-toolbar class="end-justified">
+      <div class="flex"></div>
+
+      <a href="/"><img height="46px" src="assets/images/anima-negative.svg"></a>
+
+      <div class="layout horizontal flex end-justified">
+        <content></content>
+      </div>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-toolbar'
+      });
+  </script>
+</dom-module>

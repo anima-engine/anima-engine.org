@@ -1,0 +1,31 @@
+<dom-module id="anima-feature">
+  <style>
+    :host {
+      width: 200px;
+      margin: 40px;
+    }
+    :host ::content img {
+      display: block;
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    :host ::content p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      color: #444;
+    }
+  </style>
+
+  <template>
+    <div><content></content></div>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-feature'
+      });
+  </script>
+</dom-module>

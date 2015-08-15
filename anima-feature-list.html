@@ -1,0 +1,41 @@
+<link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+<dom-module id="anima-feature-list">
+  <style>
+    :host {
+      max-width: 840px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    :host ::content anima-feature div {
+      @apply(--layout-horizontal);
+      @apply(--layout-wrap);
+      @apply(--layout-center-justified);
+    }
+    :host ::content anima-feature:nth-child(odd) div {
+      @apply(--layout-horizontal-reverse);
+    }
+    :host ::content img {
+      width: 200px;
+      margin: 40px 40px;
+    }
+    :host ::content p {
+      width: 280px;
+      margin: auto 40px;
+      font-size: 20px;
+      text-align: left;
+    }
+  </style>
+
+  <template>
+    <div><content></content></div>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-feature-list'
+      });
+  </script>
+</dom-module>

@@ -1,0 +1,35 @@
+<link rel="import" href="anima-text.html">
+
+<dom-module id="anima-post">
+  <style>
+    :host ::content div.details {
+      margin-bottom: 24px;
+    }
+    :host ::content span a img {
+      width: 24px;
+      margin: 0px 4px -4px 4px;
+      border-radius: 50%;
+    }
+    :host ::content img.featured {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    :host ::content a.post-link {
+      text-decoration: none;
+    }
+    :host ::content span.time {
+      white-space: nowrap;
+    }
+  </style>
+
+  <template>
+    <anima-text><content></content></anima-text>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-post'
+      });
+  </script>
+</dom-module>
