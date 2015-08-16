@@ -18,9 +18,9 @@
     <link rel="import" href="anima-toolbar.html">
     <link rel="import" href="anima-header.html">
     <link rel="import" href="anima-content.html">
-    <link rel="import" href="anima-photo.html">
     <link rel="import" href="anima-text.html">
     <link rel="import" href="anima-post.html">
+    <link rel="import" href="anima-controls.html">
     <link rel="import" href="anima-footer.html">
 
     <title>Anima Engine</title>
@@ -29,17 +29,31 @@
     <paper-header-panel mode="waterfall" class="flex">
       <anima-toolbar class="paper-header"><a href="/blog">Blog</a></anima-toolbar>
       <anima-header class="layout vertical">
-        <anima-text><h1>Dragos Tiselice</h1></anima-text>
+        <anima-text><h1>Blog</h1></anima-text>
       </anima-header>
 
       <anima-content>
-        <anima-photo>
-          <img src="assets/images/avatar.jpg">
-        </anima-photo>
-
+        {{#foreach posts}}
         <anima-post>
-          <p>Like it or not, CyanogenMod is still one of the most popular, well-supported custom ROMs out there. However, downloading the necessary files to flash it could be an exercise in frustration. See, the CM download page only listed device code names, but now it uses the device names you actually know.</p>
+          <a href="{{url}}" class="post-link"><h2>{{title}}</h2></a>
+          <div class="details">
+            <span>by <a href="{{author.url}}"><img src="{{author.image}}">{{author.name}}</a></span>
+            <span class="time"> {{date published_at timeago="true"}}</span>
+          </div>
+          <img src="{{image}}" class="featured">
+          <p>{{excerpt words="26"}}</p>
         </anima-post>
+        {{/foreach}}
+        <anima-controls>
+          <paper-material elevation="1" class="button left flex">
+            <div class="background layout vertical center-justified">PREVIOUS</div>
+            <a href="{{page_url prev}}"><paper-ripple></paper-ripple></a>
+          </paper-material>
+          <paper-material elevation="1" class="button right flex">
+            <div class="background layout vertical center-justified">NEXT</div>
+            <a href="{{page_url next}}"><paper-ripple></paper-ripple></a>
+          </paper-material>
+        </anima-controls>
       </anima-content>
 
       <anima-footer>

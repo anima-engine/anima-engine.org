@@ -20,7 +20,6 @@
     <link rel="import" href="anima-content.html">
     <link rel="import" href="anima-text.html">
     <link rel="import" href="anima-post.html">
-    <link rel="import" href="anima-controls.html">
     <link rel="import" href="anima-footer.html">
 
     <title>Anima Engine</title>
@@ -28,39 +27,22 @@
   <body class="fullbleed layout vertical" style="background-color: #FAFAFA;">
     <paper-header-panel mode="waterfall" class="flex">
       <anima-toolbar class="paper-header"><a href="/blog">Blog</a></anima-toolbar>
+      {{#post}}
       <anima-header class="layout vertical">
-        <anima-text><h1>Blog</h1></anima-text>
+        <anima-text><h1>{{title}}</h1></anima-text>
       </anima-header>
 
       <anima-content>
         <anima-post>
-          <a href="#" class="post-link"><h2>Samsung's Galaxy Note 5 gets a keyboard cover</h2></a>
           <div class="details">
-            <span>by <a href="#"><img src="assets/images/avatar.jpg">Dragos Tiselice</a></span>
-            <span class="time"> 2 minutes ago</span>
+            <span>by <a href="{{author.url}}"><img src="{{author.image}}">{{author.name}}</a></span>
+            <span class="time"> {{date published_at timeago="true"}}</span>
           </div>
-          <img src="assets/images/featured.jpg" class="featured">
-          <p>Like it or not, CyanogenMod is still one of the most popular, well-supported custom ROMs out there. However, downloading the necessary files to flash it could be an exercise in frustration. See, the CM download page only listed device code names, but now it uses the device names you actually know.</p>
+          <img src="{{image}}" class="featured">
+          {{content}}
         </anima-post>
-        <anima-post>
-          <a href="#" class="post-link"><h2>Samsung's Galaxy Note 5 gets a keyboard cover</h2></a>
-          <div class="details">
-            <span>by <a href="#"><img src="assets/images/avatar.jpg">Dragos Tiselice</a></span>
-            <span class="time"> 2 minutes ago</span>
-          </div>
-          <img src="assets/images/featured.jpg" class="featured">
-          <p>Like it or not, CyanogenMod is still one of the most popular, well-supported custom ROMs out there. However, downloading the necessary files to flash it could be an exercise in frustration. See, the CM download page only listed device code names, but now it uses the device names you actually know.</p>
-        </anima-post>
-        <anima-controls>
-          <paper-material elevation="1" class="button left flex">
-            <div class="background disabled layout vertical center-justified">PREVIOUS</div>
-          </paper-material>
-          <paper-material elevation="1" class="button right flex">
-            <div class="background layout vertical center-justified">NEXT</div>
-            <a href="#"><paper-ripple></paper-ripple></a>
-          </paper-material>
-        </anima-controls>
       </anima-content>
+      {{/post}}
 
       <anima-footer>
         <div class="flex-2">
