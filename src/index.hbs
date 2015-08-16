@@ -37,7 +37,9 @@
         <anima-post>
           <a href="{{url}}" class="post-link"><h2>{{title}}</h2></a>
           <div class="details">
-            <span>by <a href="{{author.url}}"><img src="{{author.image}}">{{author.name}}</a></span>
+            {{#author}}
+            <span>by <a href="{{url}}"><img src="{{image}}">{{name}}</a></span>
+            {{/author}}
             <span class="time"> {{date published_at timeago="true"}}</span>
           </div>
           <img src="{{image}}" class="featured">
