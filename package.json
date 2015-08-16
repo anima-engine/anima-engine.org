@@ -1,0 +1,10 @@
+{
+  "name": "anima-ghost-theme",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-vulcanize": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "bower": "latest"
+  }
+}
