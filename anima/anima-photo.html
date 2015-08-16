@@ -1,0 +1,26 @@
+<link rel="import" href="/blog/components/paper-material/paper-material.html">
+
+<dom-module id="anima-photo">
+  <style>
+    :host paper-material {
+      width: 210px;
+      height: 210px;
+      margin: -100px auto 0px auto;
+      background-color: white;
+    }
+    :host ::content img {
+      width: 200px;
+      margin: 5px;
+    }
+  </style>
+
+  <template>
+    <paper-material elevation="3"><content></content></paper-material>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-photo'
+      });
+  </script>
+</dom-module>

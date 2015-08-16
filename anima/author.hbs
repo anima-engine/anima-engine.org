@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#20AF8A">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/icon">
+
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="/blog/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="/blog/components/polymer/polymer.html">
+    <link rel="import" href="/blog/components/iron-flex-layout/classes/iron-flex-layout.html">
+    <link rel="import" href="/blog/components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="/blog/components/paper-header-panel/paper-header-panel.html">
+
+    <link rel="import" href="/blog/anima-toolbar.html">
+    <link rel="import" href="/blog/anima-header.html">
+    <link rel="import" href="/blog/anima-content.html">
+    <link rel="import" href="/blog/anima-photo.html">
+    <link rel="import" href="/blog/anima-text.html">
+    <link rel="import" href="/blog/anima-post.html">
+    <link rel="import" href="/blog/anima-footer.html">
+
+    <title>Anima Engine</title>
+  </head>
+  <body class="fullbleed layout vertical" style="background-color: #FAFAFA;">
+    <paper-header-panel mode="waterfall" class="flex">
+      <anima-toolbar class="paper-header"><a href="/blog">Blog</a></anima-toolbar>
+      {{#author}}
+      <anima-header class="layout vertical">
+        <anima-text><h1>{{name}}</h1></anima-text>
+      </anima-header>
+
+      <anima-content>
+        <anima-photo>
+          <img src="{{image}}">
+        </anima-photo>
+
+        <anima-post>
+          {{bio}}
+        </anima-post>
+      </anima-content>
+      {{/author}}
+
+      <anima-footer>
+        <div class="flex-2">
+          <p><strong>About us</strong></p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nisi ac nunc accumsan interdum. Vestibulum venenatis magna sed semper blandit. Phasellus tincidunt non mauris eu auctor. Mauris pharetra facilisis ligula, ut pretium nisl elementum non. Maecenas eu sem auctor, tincidunt libero sit amet, rhoncus elit.
+          </p>
+        </div>
+        <div class="layout horizontal flex around-justified">
+          <div class="links">
+            <p><strong>Follow us on</strong></p>
+
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Google+</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>Technologies we use</strong></p>
+
+            <ul>
+              <li>Android</li>
+              <li>mruby</li>
+              <li>Bullet</li>
+            </ul>
+          </div>
+        </div>
+      </anima-footer>
+    </paper-scroll-header-panel>
+  </body>
+</html>

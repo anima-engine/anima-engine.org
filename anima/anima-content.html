@@ -1,0 +1,24 @@
+<link rel="import" href="/blog/components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="/blog/components/paper-material/paper-material.html">
+
+<dom-module id="anima-content">
+  <style>
+    :host paper-material {
+      max-width: 960px;
+      margin: 0 auto 100px auto;
+      background-color: white;
+    }
+  </style>
+
+  <template>
+    <paper-material elevation="3" class="layout vertical flex">
+      <content></content>
+    </paper-material>
+  </template>
+
+  <script>
+      Polymer({
+          is: 'anima-content'
+      });
+  </script>
+</dom-module>
