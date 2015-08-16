@@ -4,7 +4,7 @@
   "devDependencies": {
     "grunt": "latest",
     "grunt-vulcanize": "latest",
-    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-copy": "latest",
     "bower": "latest"
   }
 }
