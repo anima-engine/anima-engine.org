@@ -1,6 +1,8 @@
 ### Dependecies
 1. Node.js
 2. Bower
+3. Varnish
+4. Nginx
 
 ```
 # Node.js
@@ -8,21 +10,15 @@ sudo apt-get install -y nodejs
 
 # Bower
 sudo npm install -g bower
+
+# Varnish
+sudo apt-get install -y varnish
+
+# Nginx
+sudo apt-get install -y nginx
 ```
 
-### Install
+### Install & deploy
 ```
-bower install
-cp -R anima/ ghost/content/themes
-```
-
-### Configuration
-```
-cp ghost.conf /etc/nginx/sites-available
-ln -s /etc/nginx/sites-available/ghost.conf /etc/nginx/sites-enabled/ghost.conf
-
-cp ghost.vcl /etc/varnish
-
-service nginx restart
-service varnish restart
+./deploy.sh
 ```
