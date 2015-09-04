@@ -9,6 +9,6 @@ cp ghost.vcl /etc/varnish/
 service varnish restart
 
 cp ghost.conf /etc/nginx/sites-available/
-ln -s /etc/nginx/sites-available/ghost.conf /etc/nginx/sites-enabled/ghost.conf
+ln -sf /etc/nginx/sites-available/ghost.conf /etc/nginx/sites-enabled/ghost.conf
 
 service nginx restart
