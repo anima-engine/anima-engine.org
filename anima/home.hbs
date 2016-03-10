@@ -63,8 +63,8 @@
             <div class="background disabled layout vertical center-justified">PREVIOUS</div>
           </paper-material>
           <paper-material elevation="1" class="button right flex">
-            <div class="background layout vertical center-justified">NEXT</div>
-            <a href="{{page_url next}}"><paper-ripple></paper-ripple></a>
+            <div onclick="location.href='{{page_url next}}';" class="background layout vertical center-justified">NEXT</div>
+            <paper-ripple></paper-ripple>
           </paper-material>
         </anima-controls>
       </anima-content>
