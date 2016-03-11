@@ -15,6 +15,8 @@
     <link rel="import" href="/blog/components/iron-flex-layout/classes/iron-flex-layout.html">
     <link rel="import" href="/blog/components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="/blog/components/paper-header-panel/paper-header-panel.html">
+    
+    <link rel="import" href="/blog/components/disqus-comments/disqus-comments.html">
 
     <link rel="import" href="/blog/components/anima-toolbar.html">
     <link rel="import" href="/blog/components/anima-header.html">
@@ -54,6 +56,9 @@
           </div>
           <img src="{{image}}">
           {{content}}
+          <hr />
+          <h2>Comments</h2>
+          <disqus-comments shortname="anima-engine"></disqus-comments>
         </anima-post>
       </anima-content>
       {{/post}}

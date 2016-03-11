@@ -18,6 +18,7 @@
     "paper-material": "PolymerElements/paper-material",
     "paper-toolbar": "PolymerElements/paper-toolbar",
     "paper-header-panel": "PolymerElements/paper-header-panel",
-    "paper-ripple": "PolymerElements/paper-ripple"
+    "paper-ripple": "PolymerElements/paper-ripple",
+    "disqus-comments": "divshot/disqus-comments#0915a95"
   }
 }
