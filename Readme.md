@@ -18,3 +18,5 @@ sudo apt-get install -y nginx
 ```
 ./deploy.sh
 ```
+
+*Note:* Use this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04) to setup letsencrypt.
